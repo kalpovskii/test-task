@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Perfomance({topGainer, topLoser, topGainerWeek}) {
+export function Perfomance({topGainer, topLoser}) {
 
    return (
        <div

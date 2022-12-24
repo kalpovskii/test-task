@@ -107,7 +107,7 @@ export function App() {
              <div
                  className="min-w-[320px] md:flex md:gap-4 sm:flex-col xs:min-w-[280px] xs:gap-0">
                 <Statistics currency={currency} totalPrice={totalPrice} maxPrice={maxPrice}/>
-                <Perfomance topGainer={gainer} topLoser={loser} topGainerWeek={gainerWeek}/>
+                <Perfomance topGainer={gainer} topLoser={loser}/>
              </div>
           </div>
        </div>
