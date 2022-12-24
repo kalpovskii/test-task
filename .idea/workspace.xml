@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8abcc1a2-6429-419d-92a2-c171d40c62f3" name="Changes" comment="04: adaptive layout">
+    <list default="true" id="8abcc1a2-6429-419d-92a2-c171d40c62f3" name="Changes" comment="05: layout additions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Perfomance.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Perfomance.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Statistics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Statistics.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671794166789</updated>
       <workItem from="1671794169881" duration="504000" />
-      <workItem from="1671794693258" duration="78605000" />
+      <workItem from="1671794693258" duration="83796000" />
     </task>
     <task id="LOCAL-00001" summary="01: layout">
       <created>1671813967099</created>
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671898670626</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="05: layout additions">
+      <created>1671905487431</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671905487431</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +140,7 @@
     <MESSAGE value="02: added axios" />
     <MESSAGE value="03: 24h stats for statistics and perfomance blocks" />
     <MESSAGE value="04: adaptive layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="04: adaptive layout" />
+    <MESSAGE value="05: layout additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="05: layout additions" />
   </component>
 </project>

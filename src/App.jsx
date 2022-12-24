@@ -25,6 +25,15 @@ export function App() {
       day: null,
       week: null
    })
+   // const [gainerWeek, setGainerWeek] = useState({
+   //    id: null,
+   //    name: null,
+   //    shortName: null,
+   //    image: null,
+   //    price: null,
+   //    day: null,
+   //    week: null
+   // })
    const [loser, setLoser] = useState({
       id: null,
       name: null,
@@ -55,6 +64,11 @@ export function App() {
          let sortedTopLoser = currency.slice().sort((x1, x2) => x1.day - x2.day)
          let lowTopLoser = sortedTopLoser.slice(0, 1)[0]
          setLoser(lowTopLoser)
+
+         //Top gainer 7d
+         // let sortedTopGainerWeek = currency.slice().sort((x1, x2) => x2.week - x1.week)
+         // let topGainerWeek = sortedTopGainerWeek.slice(0, 1)[0]
+         // setGainerWeek(topGainerWeek)
       }
    }, [currency])
 
@@ -83,6 +97,7 @@ export function App() {
       }
    }
 
+
    return (
        <div className="container">
           <Header/>
@@ -92,7 +107,7 @@ export function App() {
              <div
                  className="min-w-[320px] md:flex md:gap-4 sm:flex-col xs:min-w-[280px] xs:gap-0">
                 <Statistics currency={currency} totalPrice={totalPrice} maxPrice={maxPrice}/>
-                <Perfomance topGainer={gainer} topLoser={loser}/>
+                <Perfomance topGainer={gainer} topLoser={loser} topGainerWeek={gainerWeek}/>
              </div>
           </div>
        </div>
