@@ -1,5 +1,5 @@
 
-export function Perfomance () {
+export function Perfomance ({topG, topL}) {
    return (
        <div className="bg-slate-50 rounded-lg mt-6 w-[320px] h-[205px]">
           <div className="pt-5 pl-4 pb-4 pr-4">
@@ -11,18 +11,18 @@ export function Perfomance () {
                 <p className="text-sm font-medium text-slate-400 mb-1">Top Gainer</p>
                 <div className="flex justify-between">
                    <div className="flex gap-2">
-                      <img src="images/btc.png" alt="logo"/>
-                      <p>BTC</p></div>
-                   <p className="text-red-500 text-sm">-0.20%</p>
+                      <img src={topG.image} alt="logo"/>
+                      <p>{topG.shortName}</p></div>
+                   {topG.day < 0 ? <p className="text-red-500 text-sm">{topG.day}%</p> : <p className="text-green-500 text-sm">{topG.day}%</p>}
                 </div>
              </div>
              <div>
                 <p className="text-sm font-medium text-slate-400 mb-1">Top Loser</p>
                 <div className="flex justify-between">
                    <div className="flex gap-2">
-                      <img src="images/btc.png" alt="logo"/>
-                      <p>BTC</p></div>
-                   <p className="text-red-500 text-sm">-0.20%</p>
+                      <img src={topL.image} alt="logo"/>
+                      <p>{topL.shortName}</p></div>
+                   <p className="text-red-500 text-sm">{topL.day}%</p>
                 </div>
              </div>
           </div>
