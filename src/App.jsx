@@ -85,11 +85,11 @@ export function App() {
    return (
        <div className="container">
           <Header/>
-          <div className="grid grid-cols-4">
-             <div className="col-span-3"><Cryptocurrencies currency={currency}
+          <div className="flex md:flex-col-reverse">
+             <div className="w-full"><Cryptocurrencies currency={currency}
                                                            getCurrency={getCurrency}/>
              </div>
-             <div className="">
+             <div className="min-w-[320px] md:flex md:gap-4 sm:flex-col xs:min-w-[280px] xs:gap-0">
                 <Statistics currency={currency} totalPrice={totalPrice}
                             srt={maxNum}/>
                 <Perfomance topG={gainer} topL={loser}/>
